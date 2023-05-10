@@ -61,7 +61,5 @@ void AInstanceSegmentationCamera::PostPhysTick(UWorld *World, ELevelTick TickTyp
     UPrimitiveComponent *Component = Cast<UPrimitiveComponent>(Object);
     SceneCapture->ShowOnlyComponents.Emplace(Component);
   }
-
   FPixelReader::SendPixelsInRenderThread(*this);
-
 }
